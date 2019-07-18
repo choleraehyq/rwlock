@@ -21,8 +21,11 @@ type rwmutexShard struct {
 	sync.RWMutex
 }
 
-func New() RWLock {
+func init() {
 	shardsLen = runtime.GOMAXPROCS(0)
+}
+
+func New() RWLock {
 	return RWLock(make([]rwmutexShard, shardsLen))
 }
 

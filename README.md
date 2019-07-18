@@ -1,2 +1,3 @@
 # rwlock
-wrapper of jonhoo/drwmutex. 
+
+sync.RWMutex per P.

@@ -2,12 +2,16 @@ package rwlock
 
 import (
 	pid "github.com/choleraehyq/pid"
+	"runtime"
 	"sync"
 )
 
 const (
 	cacheLineSize = 64
-	shardsLen = 64
+)
+
+var (
+	shardsLen int
 )
 
 type RWLock []rwmutexShard
@@ -18,6 +22,7 @@ type rwmutexShard struct {
 }
 
 func New() RWLock {
+	shardsLen = runtime.GOMAXPROCS(0)
 	return RWLock(make([]rwmutexShard, shardsLen))
 }
 

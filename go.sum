@@ -1,4 +1,2 @@
-github.com/choleraehyq/pid v0.0.1 h1:k0Msidm9RBlkqX31a6qnhAkMDt/vfI36suIj0EN1Jhc=
-github.com/choleraehyq/pid v0.0.1/go.mod h1:Q1j7zyJyRuGB1PzLd085QPeM5AsLhmhD6eiLtifcX7s=
-github.com/jonhoo/drwmutex v0.0.0-20190519183033-0cffe0733098 h1:Csm3+jhsjDE/Xqs67UB5XUdLoX8sgtkmrDfZ34IeZXc=
-github.com/jonhoo/drwmutex v0.0.0-20190519183033-0cffe0733098/go.mod h1:TkExxZPLdJ8rd18zrMC6cJXfLkIZLRK+A6RjSJXfMEo=
+github.com/choleraehyq/pid v0.0.2 h1:26nFLL5eQHWsE3wNDILdmA5isun45ay9nO7ZP3YIDXI=
+github.com/choleraehyq/pid v0.0.2/go.mod h1:Q1j7zyJyRuGB1PzLd085QPeM5AsLhmhD6eiLtifcX7s=

@@ -46,3 +46,10 @@ func (this RWLock) RLocker() sync.Locker {
 	return this[tid % shardsLen].RWMutex.RLocker()
 }
 
+func (this RWLock) RLock() {
+	return this.RLocker().Lock()
+}
+
+func (this RWLock) RUnlock() {
+	return this.RLocker().Unlock()
+}

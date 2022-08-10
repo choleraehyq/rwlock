@@ -1,7 +1,6 @@
 package rwlock
 
 import (
-	pid "github.com/choleraehyq/pid"
 	"runtime"
 	"sync"
 )
@@ -42,7 +41,6 @@ func (this RWLock) Unlock() {
 }
 
 func (this RWLock) RLocker() sync.Locker {
-	tid := pid.GetPid()
-	return this[tid % shardsLen].RWMutex.RLocker()
+	tid := goid()
+	return this[tid%shardsLen].RWMutex.RLocker()
 }
-
